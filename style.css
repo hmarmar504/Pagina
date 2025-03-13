@@ -1,21 +1,47 @@
 body{
-    height: 200vh;
+
 }
-div{
-    background-color: green;
-    border: solid red;
+div{   
+    
 }
-.cabecera{
+/*<-----Estructura General----->*/
+aside{
+    height: 150px;
+    width: 15%;
+}
+p{
+    text-align: center;
+}
+.encabezado{
+    background-color: #343d47;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{ 
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    border: solid red;
-    background-color: yellow;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 5%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    background-color: #343d47;
+    z-index: 7;
+}
+.lista{
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .navega{ 
-    
+    border: solid rgba(0, 0, 0, 0.171);
     display: flex;
     height: 100%;
     justify-content: center;
@@ -27,6 +53,7 @@ div{
     z-index: 9;
 }
 .navActive {
+    border: solid rgba(0, 0, 0, 0.171);
     background-color: #049fbb00;
     pointer-events: none;
     display: flex;
@@ -39,21 +66,181 @@ div{
     font-size: 18px;
     z-index: 9;
 }
-.menu{ 
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+/*<-----Tienda----->*/
+.CabTienda{
+    background: url(Imagenes/Sin\ titulo3.png) no-repeat ;
     height: 100%;
-    margin: auto;
-    position: relative;
-    background-color: #343d47;
-    z-index: 7;
+    width: 100%;
 }
+.TiendaPrincipal{
+    background-color:#ff9ea698;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.TiendaContenido{
+    height: 100%;
+    width: 85%;
+}
+.Tienda{
+    height: 400px;
+    border-top:solid rgba(0, 0, 0, 0.100);
+    border-left: solid rgba(0, 0, 0, 0.100);
+}
+.TitTienda{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productos{
+    height: 50%;
+    display: flex;
+}
+.productos div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Imagenes/fondo.jpg);
+    border-right: solid rgba(0, 0, 0, 0.100);
+    border-top:solid rgba(0, 0, 0, 0.100);
+}
+.DescTienda{
+    display: flex;
+    height: 30%;
+}
+.DescTienda div{
+    border-top:solid rgba(0, 0, 0, 0.100);
+    border-right: solid rgba(0, 0, 0, 0.100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+/*<-----Inicio----->*/
+.CabInicio{
+    background: url(Imagenes/Sin\ título4.png) no-repeat ;
+    height: 100%;
+    width: 100%;
+}
+.InicioPrincipal{
+    background-color:#fadb2fcb;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.InicioContenido{
+    height: 100%;
+    width: 85%;
+
+}
+.InicioArt{
+    height: 350px;
+    border-top:solid rgba(0, 0, 0, 0.100);
+    border-left: solid rgba(0, 0, 0, 0.100);
+}
+.TitInicio{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Iniproductos{
+    height: 70%;
+    display: flex;
+}
+.InicioArt div div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid rgba(0, 0, 0, 0.100);
+    border-top:solid rgba(0, 0, 0, 0.100);
+}
+/*<-----Contacto----->*/
+.CabContacto{
+    background: url(Imagenes/Sin\ título5.png) no-repeat ;
+    height: 100%;
+    width: 100%;
+}
+.ContactoPrincipal{
+    background-color:#398d786c;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.ContactoContenido{
+    height: 100%;
+    width: 85%;
+
+}
+.ContactoArt{
+    height: 350px;
+    border-top:solid rgba(0, 0, 0, 0.100);
+    border-left: solid rgba(0, 0, 0, 0.100);
+}
+.TitContacto{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contactoproductos{
+    height: 70%;
+    display: flex;
+}
+.ContactoArt div div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid rgba(0, 0, 0, 0.100);
+    border-top:solid rgba(0, 0, 0, 0.100);
+    border: solid red;
+}
+/*<-----Extra----->*/
+.CabExtra{
+    background: url(Imagenes/Sin\ título7.png) no-repeat ;
+    height: 100%;
+    width: 100%;
+}
+.ExtraPrincipal{
+    background-color:#b8181296;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.ExtraContenido{
+    height: 100%;
+    width: 85%;
+
+}
+.ExtraArt{
+    height: 350px;
+    border-top:solid rgba(0, 0, 0, 0.100);
+    border-left: solid rgba(0, 0, 0, 0.100);
+}
+.TitExtra{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Extraproductos{
+    height: 70%;
+    display: flex;
+}
+.ExtraArt div div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid rgba(0, 0, 0, 0.100);
+    border-top:solid rgba(0, 0, 0, 0.100);
+}
+/*<-----Selector----->*/
 .menu li:nth-child(1):hover,
 .menu li:nth-child(1):focus,
 .menu li:nth-child(1):active {
